@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: 'Helvetica_Now_Display';
+    src: url('/path-to-font/HelveticaNowDisplay-Regular.woff2') format('woff2'),
+         url('/path-to-font/HelveticaNowDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    /* background-color: #fd2c2a; */
+    background-color: black;
+}
+canvas{
+    pointer-events: none;
+}
+span.growing {
+    background-color: #fd2c2a;
+  }
+
+  body::-webkit-scrollbar{
+    display: none;
+  }
